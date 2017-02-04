@@ -15,11 +15,12 @@ var articleOne={
              <p> This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.
             </p>`
 };
-var title=data.title;
+
+function createTemplate (data){
+    var title=data.title;
 var date=data.date;
 var heading=data.heading;
 var content=data.content;
-function createTemplate (data){
 var htmlTemplate=`
 <html>
     
