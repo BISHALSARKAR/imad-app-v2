@@ -18,7 +18,7 @@ var articleOne={
 var title=data.title;
 var date=data.date;
 var heading=data.heading;
-var content=data.content
+var content=data.content;
 function createTemplate (data)
      {
 var htmlTemplate=`
@@ -51,7 +51,9 @@ var htmlTemplate=`
     
 </html>
 `;
-return htmlTemplate;}
+return htmlTemplate;
+         
+     }
 app.get('/', function (req, res) {
   res.send(crateTemplate(articleOne));
 });
