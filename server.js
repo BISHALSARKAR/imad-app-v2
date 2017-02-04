@@ -13,7 +13,7 @@ var content={
              <p> This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.
             </p>
              <p> This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.This the content of my first article.
-            </p>`,
+            </p>`
 };
 var title=data.title;
 var date=data.date;
