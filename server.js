@@ -53,7 +53,7 @@ var htmlTemplate=`
 return htmlTemplate;
          
      }
-app.get('/',function(req,res){res.sendFile(path.join(__dirame, 'ui',index.html));});
+app.get('/',function(req,res){res.sendFile(path.join(__dirname, 'ui',index.html));});
 app.get('/article-one', function (req, res) {
   res.send(createTemplate(articleOne));
 });
