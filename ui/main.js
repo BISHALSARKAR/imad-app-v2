@@ -17,6 +17,9 @@ button.onclick=function(){
            
        }
    };
+    request.open('GET','http://bishalsarkar.imad.hasura-app.io/counter' ,true);
+   request.send(null);
+};
    
 submit.onclick=function(){
     //Create a request object
