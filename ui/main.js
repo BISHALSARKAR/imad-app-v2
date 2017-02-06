@@ -20,7 +20,7 @@ button.onclick=function(){
     request.open('GET','http://bishalsarkar.imad.hasura-app.io/counter' ,true);
    request.send(null);
 };
-   
+   var submit = document.getElementById('submit_btn');
 submit.onclick=function(){
     //Create a request object
    var request=new XMLHttpRequest();
@@ -34,7 +34,7 @@ submit.onclick=function(){
     var names=request.responseText;
     names=JSON.parse(names);
     var list='';
-    for(var i=0;i<names.length;i++){
+    for(var i=0; i<names.length;i++){
         list+='<li>'+names[i]+'</li>';
     }
    var ul=document.getElementById('namelist');
