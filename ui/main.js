@@ -32,7 +32,7 @@ button.onclick=function(){
 
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
-     //Create a request object
+    //Create a request object
    var request=new XMLHttpRequest();
    //capture the response and store it in a variable
    request.onreadystatechange=function(){
@@ -49,17 +49,14 @@ submit.onclick=function(){
     }
    var ul=document.getElementById('namelist');
    ul.innerHTML = list;
-    //Make a request to the server and send the name
+    
        }
+       
        }
-   
-};
-//Make the request
-var nameInput=document.getElementById('name');
-var name=nameInput.value;
-   request.open('GET','http://bishalsarkar.imad.hasura-app.io/submit-name' + name,true);
+       //Not done yet
+   };
+   //Make the request
+   request.open('GET','http://bishalsarkar.imad.hasura-app.io/submit-name?name=' + name,true);
    request.send(null);
- 
-   request.open('GET','http://bishalsarkar.imad.hasura-app.io/submit-name' + name,true);
-   request.send(null);
+  
 };
